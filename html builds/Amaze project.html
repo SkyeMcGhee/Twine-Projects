@@ -79,7 +79,7 @@ you remember what you looked like. Your body vaguely resembles a human:
 $energy
 
 
-(save-game: &quot;Slot A&quot;)</tw-passagedata><tw-passagedata pid="7" name="investigate" tags="" position="1950,400" size="100,100">&lt;!--set up the scene moar--&gt;
+(save-game: &quot;Slot A&quot;)</tw-passagedata><tw-passagedata pid="7" name="investigate" tags="" position="2000,400" size="100,100">&lt;!--set up the scene moar--&gt;
 
 [[the body]]
 
@@ -90,19 +90,19 @@ $energy
 $energy
 
 
-(save-game: &quot;Slot A&quot;)</tw-passagedata><tw-passagedata pid="8" name="sneak away" tags="" position="2175,425" size="100,100">you try to sneak away, and then..
+(save-game: &quot;Slot A&quot;)</tw-passagedata><tw-passagedata pid="8" name="sneak away" tags="" position="1875,600" size="100,100">Nothing good will come out of standing there. You step out of the room and back into the main room, silently shutting the door behind you. You feel far better with a door between you and *that*
 
 
-
+your relief is cut short by the sound of foosteps
 [[comp reveal A]]
-(save-game: &quot;Slot A&quot;)</tw-passagedata><tw-passagedata pid="9" name="the body" tags="" position="1875,200" size="100,100">&lt;!--hint reveal--&gt;
+(save-game: &quot;Slot A&quot;)</tw-passagedata><tw-passagedata pid="9" name="the body" tags="" position="1875,250" size="100,100">&lt;!--hint reveal--&gt;
 
 
 (set: $energy to $energy - 5)
 $energy
 
 [[comp reveal]] 
-(save-game: &quot;Slot A&quot;)</tw-passagedata><tw-passagedata pid="10" name="the implants" tags="" position="2100,125" size="100,100">
+(save-game: &quot;Slot A&quot;)</tw-passagedata><tw-passagedata pid="10" name="the implants" tags="" position="2050,200" size="100,100">
 
 
 (set: $energy to $energy - 5)
@@ -110,7 +110,7 @@ $energy
 
 [[comp reveal]] 
 
-(save-game: &quot;Slot A&quot;)</tw-passagedata><tw-passagedata pid="11" name="the clothes" tags="" position="2150,250" size="100,100">
+(save-game: &quot;Slot A&quot;)</tw-passagedata><tw-passagedata pid="11" name="the clothes" tags="" position="2225,300" size="100,100">
 
 
 (set: $energy to $energy - 5)
@@ -137,7 +137,7 @@ no save exists. return to [[Title]]
 
 new game started
 
-[[start]] </tw-passagedata><tw-passagedata pid="14" name="credits" tags="" position="0,350" size="100,100"></tw-passagedata><tw-passagedata pid="15" name="comp reveal" tags="" position="2400,500" size="100,100">
+[[start]] </tw-passagedata><tw-passagedata pid="14" name="credits" tags="" position="0,350" size="100,100"></tw-passagedata><tw-passagedata pid="15" name="comp reveal" tags="" position="2200,450" size="100,100">
 
 
 $energy
@@ -148,7 +148,7 @@ $energy
 
 [[fight back]]
 
-[[the gun]]</tw-passagedata><tw-passagedata pid="16" name="energy restore" tags="" position="1650,25" size="100,100">(set: $energy to 100)</tw-passagedata><tw-passagedata pid="17" name="options" tags="" position="1050,25" size="100,100">[[new game]] 
+[[the gun]]</tw-passagedata><tw-passagedata pid="16" name="energy restore" tags="" position="1650,25" size="100,100">(set: $energy to 100)</tw-passagedata><tw-passagedata pid="17" name="options" tags="" position="125,125" size="100,100">[[new game]] 
 
 [[credits]] </tw-passagedata><tw-passagedata pid="18" name="male" tags="" position="900,600" size="100,100">(set: $bod to 2)
 
@@ -193,7 +193,7 @@ it doesnt matter what the phsyical frame of yours represents. you are:
 
 (if:$trans is true)[ [[trans]] ]
 
-(if:$trans is false)[ [[notrans]] ]</tw-passagedata><tw-passagedata pid="22" name="woman" tags="" position="1200,425" size="100,100">(if:(history: where its name contains &quot;female&quot;)&#39;s length is 1)[(set: $trans to false)]
+(if:$trans is false)[ [[notrans]] ]</tw-passagedata><tw-passagedata pid="22" name="woman" tags="" position="1200,400" size="100,100">(if:(history: where its name contains &quot;female&quot;)&#39;s length is 1)[(set: $trans to false)]
 (else:)[(set: $trans to true)]
 
 (set: $gen to 1)
@@ -221,7 +221,7 @@ it doesnt matter what the phsyical frame of yours represents. you are:
 
 (if:$trans is true)[ [[trans]] ]
 
-(if:$trans is false)[ [[notrans]] ]</tw-passagedata><tw-passagedata pid="26" name="trans" tags="" position="1500,950" size="100,100">at least you remember who you are, then, if only roughly. a name even comes to you
+(if:$trans is false)[ [[notrans]] ]</tw-passagedata><tw-passagedata pid="26" name="trans" tags="" position="1400,950" size="100,100">at least you remember who you are, then, if only roughly. a name even comes to you
 
 
 [[preset 1]]
@@ -231,7 +231,7 @@ it doesnt matter what the phsyical frame of yours represents. you are:
 [[preset 3]]
 
 [[type]]
-</tw-passagedata><tw-passagedata pid="27" name="notrans" tags="" position="1500,425" size="100,100">at least you remember who you are, then, if only roughly. a name even comes to you
+</tw-passagedata><tw-passagedata pid="27" name="notrans" tags="" position="1400,400" size="100,100">at least you remember who you are, then, if only roughly. a name even comes to you
 
 
 [[preset 1]]
@@ -241,7 +241,7 @@ it doesnt matter what the phsyical frame of yours represents. you are:
 [[preset 3]]
 
 [[type]]
-</tw-passagedata><tw-passagedata pid="28" name="preset 1" tags="" position="1750,450" size="100,100">(set: $name to &#39;placeholder1&#39;)
+</tw-passagedata><tw-passagedata pid="28" name="preset 1" tags="" position="1600,400" size="100,100">(set: $name to &#39;placeholder1&#39;)
 
 An occupation and a name might not be much, but it&#39;s a start. Better than no clues at all.
 
@@ -253,7 +253,7 @@ walking the perimeter of the small room you find 3 doors, 2 of which are unlocke
 
 [[right]]
 
-</tw-passagedata><tw-passagedata pid="29" name="preset 2" tags="" position="1750,600" size="100,100">(set: $name to &#39;placeholder2&#39;)
+</tw-passagedata><tw-passagedata pid="29" name="preset 2" tags="" position="1600,600" size="100,100">(set: $name to &#39;placeholder2&#39;)
 
 An occupation and a name might not be much, but it&#39;s a start. Better than no clues at all.
 
@@ -264,7 +264,7 @@ walking the perimeter of the small room you find 3 doors, 2 of which are unlocke
 [[left]]
 
 [[right]]
-</tw-passagedata><tw-passagedata pid="30" name="preset 3" tags="" position="1750,750" size="100,100">(set: $name to &#39;placeholder3&#39;)
+</tw-passagedata><tw-passagedata pid="30" name="preset 3" tags="" position="1600,750" size="100,100">(set: $name to &#39;placeholder3&#39;)
 
 An occupation and a name might not be much, but it&#39;s a start. Better than no clues at all.
 
@@ -275,7 +275,7 @@ walking the perimeter of the small room you find 3 doors, 2 of which are unlocke
 [[left]]
 
 [[right]]
-</tw-passagedata><tw-passagedata pid="31" name="type" tags="" position="1750,900" size="100,100">(input-box:2bind $name,&quot;=XX=&quot;)
+</tw-passagedata><tw-passagedata pid="31" name="type" tags="" position="1600,900" size="100,100">(input-box:2bind $name,&quot;=XX=&quot;)
 
 An occupation and a name might not be much, but it&#39;s a start. Better than no clues at all.
 
@@ -286,7 +286,7 @@ walking the perimeter of the small room you find 3 doors, 2 of which are unlocke
 [[left]]
 
 [[right]]
-</tw-passagedata><tw-passagedata pid="32" name="left" tags="" position="2050,800" size="100,100">the door swings open easily. A yellowed automatic light flickers on, revealing a small office
+</tw-passagedata><tw-passagedata pid="32" name="left" tags="" position="1800,800" size="100,100">the door swings open easily. A yellowed automatic light flickers on, revealing a small office
 
 (if:$analysis is 15)[It&#39;s a strange place for an office, considering the only entrance is a storage room. A name on the pile of documents catches your eye..]
 
@@ -295,11 +295,13 @@ you hear a door unlock, then footsteps. Before you can even turn around, you fee
 [[comp reveal A]] 
 
 $energy
-(save-game: &quot;Slot A&quot;)</tw-passagedata><tw-passagedata pid="33" name="right" tags="" position="2050,550" size="100,100">moider reveal
+(save-game: &quot;Slot A&quot;)</tw-passagedata><tw-passagedata pid="33" name="right" tags="" position="1800,400" size="100,100">The first thing you notice is the blood. It coats nearly every surface of the small room.
+
+Your eyes eventually focus on the body.
 
 [[investigate]] 
 
-[[sneak away]] </tw-passagedata><tw-passagedata pid="34" name="comp reveal A" tags="" position="2400,800" size="100,100">“dont. move”
+[[sneak away]] </tw-passagedata><tw-passagedata pid="34" name="comp reveal A" tags="" position="2000,800" size="100,100">“dont. move”
 
 a man’s voice, smooth and filled with confidence. You get the impression that he thinks he has the upper hand. he probably does
 
@@ -308,44 +310,84 @@ a man’s voice, smooth and filled with confidence. You get the impression that 
 [[fight back A]]
 
 $energy
-(save-game: &quot;Slot A&quot;)</tw-passagedata><tw-passagedata pid="35" name="who A" tags="" position="2600,700" size="100,100">ask who he is, check for rizz
+(save-game: &quot;Slot A&quot;)</tw-passagedata><tw-passagedata pid="35" name="who A" tags="" position="2150,700" size="100,100">Maybe if you keep him talking, you can find your way out of this? Or buy time, at the very least
 
-(if:$charisma &gt; 15)[Your Text Here]
-(else:)[other text]
+(if:$charisma &gt; 15)[ you know how to handle conflict. You say something calm and clever, bordering on a light joke. the answer is silence. on the edge of your vision you see him lower the gun]
+(else:)[all you can think of are blunt questions. who is he? why is he here?. You don&#39;t get an answer. He lowers the gun]
 
 $energy
 (save-game: &quot;Slot A&quot;)
-(set: $perRizz to $perRizz + 1)</tw-passagedata><tw-passagedata pid="36" name="the gun A" tags="" position="2600,1000" size="100,100">understand the weapon, check for tech
+(set: $perRizz to $perRizz + 1)
 
-(if:$tech &gt; 15)[Your Text Here]
+[[calm progressA]] </tw-passagedata><tw-passagedata pid="36" name="the gun A" tags="" position="2150,850" size="100,100">You tilt your head slightly to the side, just enough to catch a glimpse of the weapon aimed at you. 
+
+(if:$tech &gt; 15)[You Know that gun. Not exactly rare, but unusal]
 (else:)[other text]
 $energy
 (save-game: &quot;Slot A&quot;)
-(set: $perClever to $perClever + 1)</tw-passagedata><tw-passagedata pid="37" name="fight back A" tags="" position="2600,850" size="100,100">even the playing field, check for analysis
+(set: $perClever to $perClever + 1)
 
-(if:$analysis &gt; 15)[Your Text Here]
+[[calm progressA]]</tw-passagedata><tw-passagedata pid="37" name="fight back A" tags="" position="2150,1000" size="100,100">You don&#39;t hesitate. You just hope by the sound of his voice that you correctly guessed where he was
+
+(if:$analysis &gt; 15)[You swing at him and knock the gun aside]
+(else:)[you try to strike him. he dodges]
+$energy
+(save-game: &quot;Slot A&quot;)
+(set: $perBrave to $perBrave + 1)
+
+[[combat progress a]]</tw-passagedata><tw-passagedata pid="38" name="who" tags="" position="2400,350" size="100,100">Maybe if you keep him talking, you can find your way out of this? Or buy time, at the very least
+
+(if:$charisma &gt; 15)[ you know how to handle conflict. You say something calm and clever, bordering on a light joke. the answer is silence. on the edge of your vision you see him lower the gun ]
+(else:)[all you can think of are blunt questions. who is he? why is he here?. You don&#39;t get an answer. He lowers the gun ]
+$energy
+(save-game: &quot;Slot A&quot;)
+(set: $perRizz to $perRizz + 1)
+
+[[calm progress]]</tw-passagedata><tw-passagedata pid="39" name="fight back" tags="" position="2400,200" size="100,100">You don&#39;t hesitate. You just hope by the sound of his voice that you correctly guessed where he was
+
+(if:$analysis &gt; 15)[You swing at him and knock the gun aside]
+(else:)[you try to strike him. he dodges]
+$energy
+(save-game: &quot;Slot A&quot;)
+(set: $perBrave to $perBrave + 1)
+
+[[combat progress]]</tw-passagedata><tw-passagedata pid="40" name="the gun" tags="" position="2400,475" size="100,100">You tilt your head slightly to the side, just enough to catch a glimpse of the weapon aimed at you. 
+
+(if:$tech &gt; 15)[You Know that gun. Not exactly rare, but unusal. ]
 (else:)[other text]
 $energy
 (save-game: &quot;Slot A&quot;)
-(set: $perBrave to $perBrave + 1)</tw-passagedata><tw-passagedata pid="38" name="who" tags="" position="2600,250" size="100,100">ask who he is, check for rizz
+(set: $perClever to $perClever + 1)
 
-(if:$charisma &gt; 15)[Your Text Here]
-(else:)[other text]
-$energy
-(save-game: &quot;Slot A&quot;)
-(set: $perRizz to $perRizz + 1)</tw-passagedata><tw-passagedata pid="39" name="fight back" tags="" position="2600,400" size="100,100">even the playing field, check for analysis
+[[calm progress]] </tw-passagedata><tw-passagedata pid="41" name="resolve" tags="" position="2800,275" size="100,100"></tw-passagedata><tw-passagedata pid="42" name="calm progressA" tags="" position="2350,700" size="100,100">&quot;you&#39;re just an android&quot; he huffed &quot;turn around&quot;
 
-(if:$analysis &gt; 15)[Your Text Here]
-(else:)[other text]
-$energy
-(save-game: &quot;Slot A&quot;)
-(set: $perBrave to $perBrave + 1)</tw-passagedata><tw-passagedata pid="40" name="the gun" tags="" position="2600,525" size="100,100">understand the weapon, check for tech
+you do, not wanting to push your luck 
 
-(if:$tech &gt; 15)[Your Text Here]
-(else:)[other text]
-$energy
-(save-game: &quot;Slot A&quot;)
-(set: $perClever to $perClever + 1)</tw-passagedata><tw-passagedata pid="41" name="resolve" tags="" position="3100,600" size="100,100"></tw-passagedata></tw-storydata>
+[[full comp reveal A]]</tw-passagedata><tw-passagedata pid="43" name="calm progress" tags="" position="2600,425" size="100,100"></tw-passagedata><tw-passagedata pid="44" name="combat progress" tags="" position="2600,200" size="100,100"></tw-passagedata><tw-passagedata pid="45" name="combat progress a" tags="" position="2275,950" size="100,100">you get knocked to the ground, 
+
+he realises you&#39;re an android and stops &quot;what are you doing? why did you even-&quot; he stops himself, and sighs. He looks more irritated than angry
+
+jkadf
+sadjfkasnv
+
+sdfasdf
+asd
+f
+he offers a hand to help you up
+
+[[take it]]
+
+[[stand up alone]]</tw-passagedata><tw-passagedata pid="46" name="take it" tags="" position="2400,825" size="100,100">(set: $relStatus to $relStatus +1)
+
+[[full comp reveal A]] </tw-passagedata><tw-passagedata pid="47" name="stand up alone" tags="" position="2400,1000" size="100,100">you ignore the offer, and the vindicated look on his face when it takes you a few moments to get to your feet. he must&#39;ve knocked something loose
+
+[[full comp reveal A]] </tw-passagedata><tw-passagedata pid="48" name="full comp reveal A" tags="" position="2600,800" size="100,100">the name on his coat reads &#39;  &#39;. He asks for yours, and you give it
+
+&quot; $name ? who do you work under? and why the hell did they send you here?&quot;
+
+You don&#39;t have much of an answer
+
+&quot;look, i dont..i dont have time for this. stay put, and ill deal with you later&quot; You watch him head towards the door on your right</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
